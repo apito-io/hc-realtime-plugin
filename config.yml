@@ -1,0 +1,27 @@
+# Apito Realtime Plugin Configuration
+plugin:
+  id: "hc-realtime-plugin"
+  language: "go"
+  title: "Apito Realtime Sync Plugin"
+  icon: "https://raw.githubusercontent.com/apito-io/hc-realtime-plugin/main/logo.png"
+  description: "Real-time data synchronization via WebSocket"
+  type: "system"
+  role: ""
+  enable: true
+  debug: false
+  version: "1.0.0"
+  author: "Apito"
+  repository_url: "https://github.com/apito-io/hc-realtime-plugin"
+  branch: "main"
+  graphql_schema_config:
+    queries: []
+    mutations: []
+  rest_api_config: []
+  binary_path: "hc-realtime-plugin"
+  handshake_config:
+    protocol_version: 1
+    magic_cookie_key: "APITO_PLUGIN"
+    magic_cookie_value: "apito_plugin_magic_cookie_v1"
+  env_vars:
+    - key: "WS_PORT"
+      value: "8081"
